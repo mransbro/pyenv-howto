@@ -15,8 +15,16 @@ echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nf
 To list and then install a Python version.
 
 ``` bash
-pyenv install --list
-pyenv install 3.9.1
+pyenv install -l | grep 3.10
+  3.10.0
+  3.10-dev
+  3.10.1
+  mambaforge-4.10.3-10
+  miniconda-3.10.1
+  miniconda3-3.10.1
+  miniforge3-4.10.3-10
+
+pyenv install 3.10.1
 ```
 
 Entering the command ``pyenv versions`` will show you all versions of Python you currently have installed on your computer. To set a particular version to be your default global version, simply enter the following command.
